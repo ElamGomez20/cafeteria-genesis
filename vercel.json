@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:route*",
+      "destination": "/api?route=:route*"
+    }
+  ],
+  "framework": null,
+  "outputDirectory": "public",
+  "buildCommand": "",
+  "installCommand": "",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 60
+    }
+  }
+}

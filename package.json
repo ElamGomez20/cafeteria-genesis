@@ -1,0 +1,15 @@
+{
+  "name": "genesis-nube",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env server/dev.js",
+    "start": "node --env-file=.env server/dev.js",
+    "check": "node --check api/index.js && node --check server/dev.js && node --check public/js/app.js",
+    "test": "node --test server/check.test.js"
+  }
+}
